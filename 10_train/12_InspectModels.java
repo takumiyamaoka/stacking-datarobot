@@ -8,6 +8,8 @@ public class InspectModels {
         inspectJar("modelA.jar");
         System.out.println("\n" + "=".repeat(50) + "\n");
         inspectJar("modelB.jar");
+        System.out.println("\n" + "=".repeat(50) + "\n");
+        inspectJar("modelB2.jar");
     }
     
     private static void inspectJar(String jarName) {

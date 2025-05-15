@@ -22,7 +22,7 @@ public class StackingDRDemo {
 
     // First stage classification model (modelA)
     System.out.println("Loading Model A...");
-    Iterator<IPredictorInfo> modelAPredictors = Predictors.getAllPredictorsFromJarFile("models/modelA.jar");
+    Iterator<IPredictorInfo> modelAPredictors = Predictors.getAllPredictorsFromJarFile("../10_train/models/modelA.jar");
     double predA = 0.0;  // Store Model A's Class 1 prediction
 
     // Get the first model from modelA.jar (first-stage model)
@@ -54,7 +54,7 @@ public class StackingDRDemo {
 
     // Second stage classification model (modelB)
     System.out.println("\nLoading Model B...");
-    Iterator<IPredictorInfo> modelBPredictors = Predictors.getAllPredictorsFromJarFile("models/modelB.jar");
+    Iterator<IPredictorInfo> modelBPredictors = Predictors.getAllPredictorsFromJarFile("../10_train/models/modelB.jar");
     
     // Skip the first model and get the second model from modelB.jar (second-stage model)
     if (modelBPredictors.hasNext()) {
